@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>메인페이지 입니다.</title>
+	<style>
+		ul{list-style: none; margin: 0; padding: 0;}
+	</style>
+</head>
+
+<body>
+	<h3>반갑습니다. 조수연입니다.</h3>
+	<a href="info/myInfo.html">내 정보 보기</a>
+	<h3>내가 좋아하는 과일</h3>
+	<ul>
+		<li>사과</li>
+		<li>수박</li>
+		<li>복숭아</li>
+	</ul>
+
+	<script>
+		var h3s = document.getElementsByTagName('h3');
+		h3s[0].innerText = 'Welcome to Sooyeon.'
+		
+		var li = document.querySelector('ul>li');
+		li.style.background = 'yellow'
+
+		var li2 = document.querySelector('ul>li:nth-child(1)');
+		li2.onclick = function(){
+			alert('리스트 태그를 클릭했습니다.');
+		}
+
+		console.log(h3s[0]);
+
+
+	</script>
+
+</body>
+
+</html>
